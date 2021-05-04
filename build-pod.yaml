@@ -23,3 +23,6 @@ spec:
     - name: docker
       hostPath:
         path: /var/run/docker.sock
+    - name: workspace-volume
+      emptyDir: {}
+    
