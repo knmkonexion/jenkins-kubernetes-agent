@@ -5,7 +5,6 @@ pipeline {
       idleMinutes 5
       yamlFile 'build-pod.yaml'
       defaultContainer 'maven'
-      runAsUser 0
     }
   }
   stages {
