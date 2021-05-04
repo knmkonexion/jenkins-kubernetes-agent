@@ -13,12 +13,12 @@ pipeline {
         sh 'mvn clean package'
       }
     }
-    stage('Build Docker Image') {
-      steps {
-        container('docker') {  
-          sh 'docker build -t promo-app:dev .'
-        }
-      }
-    }
+    // stage('Build Docker Image') {
+    //   steps {
+    //     container('docker') {  
+    //       sh 'docker build -t promo-app:dev .'
+    //     }
+    //   }
+    // }
   }
 }
