@@ -27,4 +27,5 @@ spec:
       hostPath:
         path: /var/run/docker.sock
     - name: workspace-volume
-      emptyDir: {}
+      hostPath:
+        path: /cluster_datastore/jenkins_agent
